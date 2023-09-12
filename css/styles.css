@@ -180,7 +180,7 @@ section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-image: url("/assets/Poster.png");
+  background-image: url("../assets/Poster.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -39,14 +39,14 @@ async function getFilms(value = "happy") {
       <h4 class=" movie-card__title">${elem.Title}</h4>
       <ul class=" movie-card__rating">
       <li class=" movie-card__rating-item">
-      <img src="/assets/rating-1.png" alt="rating" />
+      <img src="./assets/rating-1.png" alt="rating" />
       <span
         class=" movie-card__rating-text"
         >${elem.Ratings[2]?.Value ?? "Not Found"}</span
       >
     </li>
     <li class=" movie-card__rating-item">
-      <img src="/assets/rating-2.png" alt="rating" />
+      <img src="./assets/rating-2.png" alt="rating" />
       <span
         class="movie-card__rating-text"
         >${elem.Ratings[1]?.Value ?? "Not Found"}</span
@@ -94,14 +94,14 @@ async function getOneFilm(id) {
   <p class="movie-card__description">${data.Plot}</p>
   <ul class=" movie-card__rating">
   <li class=" movie-card__rating-item">
-  <img src="/assets/rating-1.png" alt="rating" />
+  <img src="./assets/rating-1.png" alt="rating" />
   <span
     class=" movie-card__rating-text"
     >${data.Ratings[2]?.Value ?? "Not Found"}</span
   >
 </li>
 <li class=" movie-card__rating-item">
-  <img src="/assets/rating-2.png" alt="rating" />
+  <img src="./assets/rating-2.png" alt="rating" />
   <span
     class="movie-card__rating-text"
     >${data.Ratings[1]?.Value ?? "Not Found"}</span
