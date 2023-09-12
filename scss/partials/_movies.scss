@@ -1,0 +1,18 @@
+.movies {
+  // .movies__wrap
+  &__wrap {
+  }
+  // .movies__title
+  &__title {
+  }
+  // .movies__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px 20px;
+    padding: 20px 0;
+  }
+}
+
+.js-movies {
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <header class="header">
+          <div class="header__wrapper container">
+            <div class="header__logo">
+              <a href="/" class="logo__link">
+                <img class="logo__img" src="assets/tv.png" alt="" srcset="" />
+                <h3 class="logo__text">MovieBox</h3>
+              </a>
+            </div>
+            <div class="header__search">
+              <input
+                data-i18n="placeholder"
+                class="search__input search-input-js"
+                type="text"
+                placeholder="What do you want to watch?"
+              />
+              <button class="search__button">
+                <svg class="search__icon">
+                  <use
+                    class="search-icon-js"
+                    href="/assets/sprite.svg#search"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__service">
+              <div class="service__theme">
+                <button class="service__theme-color-button js-theme-button">
+                  <svg class="service__icon">
+                    <use
+                      class="js-theme-icon"
+                      href="/assets/sprite.svg#sun"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="header__lang js-lang-group">
+                <label class="lang__label" for="ru"
+                  >Ru
+                  <input
+                    type="radio"
+                    class="lang__radio"
+                    name="lange"
+                    value="ru"
+                    id="ru"
+                  />
+                </label>
+                <label class="lang__label lang-active" for="en"
+                  >En
+                  <input
+                    type="radio"
+                    class="lang__radio"
+                    name="lange"
+                    value="en"
+                    id="en"
+                    checked
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- /.header -->
+        <div class="hero__wrap container">
+          <div class="hero__body">
+            <h1 class="hero__title">John Wick 3: Parabellum</h1>
+            <div class="hero__rating">
+              <div class="rating__item">
+                <div class="rating__image">
+                  <img
+                    src="assets/rating-1.png"
+                    width="35px"
+                    height="17px"
+                    alt="rating"
+                  />
+                </div>
+                <div class="rating__value">86.0 / 100</div>
+              </div>
+              <div class="rating__item">
+                <div class="rating__image">
+                  <img
+                    src="assets/rating-2.png"
+                    width="16px"
+                    height="17px"
+                    alt="rating"
+                  />
+                </div>
+                <div class="rating__value">97%</div>
+              </div>
+            </div>
+            <p class="hero__subtitle">
+              John Wick is on the run after killing a member of the
+              international assassins' guild, and with a $14 million price tag
+              on his head, he is the target of hit men and women everywhere.
+            </p>
+            <a href="#" class="hero__button">
+              <img
+                src="assets/Icon.png"
+                width="20px"
+                height="20px"
+                alt="play"
+              />
+              <span>Watch trailer</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- /. hero -->
+      <main class="main">
+        <section class="featured">
+          <div class="featured__wrap container">
+            <h2
+              class="featured__title section-title"
+              data-i18n="featured-title"
+            >
+              Featured Movie
+            </h2>
+            <div class="featured__body">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /. featured -->
+        <section id="movies" class="movies">
+          <div class="movies__wrap container">
+            <h2 class="movies__title section-title" data-i18n="movies-title">
+              Movies
+            </h2>
+            <div class="movies__body js-movies"></div>
+          </div>
+        </section>
+      </main>
+      <!-- /.main -->
+      <div class="footer"></div>
+      <!-- /.footer -->
+
+      <div class="modal">
+        <div class="modal__wrap">
+          <div class="modal__head">
+            <button class="modal__close-button">
+              <svg><use href="assets/sprite.svg#close"></use></svg>
+            </button>
+          </div>
+          <div class="modal__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            incidunt amet maxime laboriosam laborum dicta, cupiditate odit
+            adipisci. Sunt accusamus pariatur minus tempore sint est nobis
+            voluptas ratione, eum error!
+          </div>
+        </div>
+      </div>
+      <!-- ./ modal -->
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background: $bgWhite;
+  color: $bgBlack;
+  transition: 0.3s ease;
+}
+
+a {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1;
+}
+
+section {
+  padding: 35px 0 40px;
+}
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: $bgBlack;
+}
+
+.movie-card {
+  cursor: pointer;
+  // .movie-card__poster
+  &__poster {
+    margin-bottom: 12px;
+    height: 370px;
+    overflow: hidden;
+    pointer-events: none;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .movie-card__year
+  &__year {
+    margin-bottom: 12px;
+    color: #9ca3af;
+    font-weight: 700;
+    pointer-events: none;
+  }
+  // .movie-card__title
+  &__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $bgBlack;
+    pointer-events: none;
+  }
+  // .movie-card__description
+  &__description {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  // .movie-card__rating
+  &__rating {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    pointer-events: none;
+    list-style: none;
+  }
+  // .movie-card__rating-item
+  &__rating-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  // .movie-card__rating-text
+  &__rating-text {
+    font-size: 12px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+  // .movie-card__genre
+  &__genre {
+    font-size: 12px;
+    color: #9ca3af;
+    font-weight: 700;
+    pointer-events: none;
+  }
+  // &:hover {
+  //   box-shadow: 0px 4px 25px 0px rgba(51, 51, 51, 0.2);
+  // }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

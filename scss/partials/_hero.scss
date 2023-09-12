@@ -1,0 +1,65 @@
+.hero {
+  width: 100%;
+  height: fit-content;
+  background-image: url("/assets/Poster.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // .hero__body
+  &__body {
+    max-width: 450px;
+    margin: 78px 0;
+    // margin-top: 78px;
+    // @media (max-width: 768px) {
+    //   max-width: 100%;
+    //   margin-top: 150px;
+    // }
+  }
+  // .hero__title
+  &__title {
+    font-size: calc(34px + 30 * (100vw - 320px) / 870);
+    color: $red;
+  }
+  // .hero__rating
+  &__rating {
+    display: flex;
+    gap: 40px;
+    padding: 16px 0;
+  }
+  // .hero__subtitle
+  &__subtitle {
+    line-height: 1.5em;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  // .hero__button
+  &__button {
+    display: inline-flex;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: $red;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+.rating {
+  // .rating__item
+  &__item {
+    display: flex;
+    gap: 10px;
+  }
+  // .rating__image
+  &__image {
+  }
+  // .rating__value
+  &__value {
+    color: #fff;
+  }
+}

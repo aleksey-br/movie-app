@@ -1,0 +1,69 @@
+.featured {
+  // .featured__wrap
+  &__wrap {
+  }
+  // .featured__title
+  &__title {
+  }
+  // .featured__body
+  &__body {
+    position: relative;
+  }
+  // .featured__card
+  &__card {
+  }
+}
+.container {
+}
+.section-title {
+}
+.swiper {
+}
+
+.swiper-wrapper {
+  padding: 20px 0;
+}
+.swiper-slide {
+}
+
+.card {
+  // .card__poster
+  &__poster {
+    img {
+    }
+  }
+  // .card__year
+  &__year {
+  }
+  // .card__title
+  &__title {
+  }
+  // .card__rating
+  &__rating {
+  }
+  // .card__rating-item
+  &__rating-item {
+  }
+  // .card__rating-text
+  &__rating-text {
+  }
+  // .card__genre
+  &__genre {
+  }
+}
+.swiper-button-next {
+  right: -45px;
+  color: $bgBlack;
+  outline: none;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  left: -45px;
+  color: $bgBlack;
+  outline: none;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
