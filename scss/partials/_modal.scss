@@ -5,12 +5,13 @@
   right: 0;
   bottom: 0;
   z-index: 990;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   visibility: hidden;
   pointer-events: none;
+
   // .modal__wrap
   &__wrap {
     min-height: 40vh;

@@ -488,7 +488,7 @@ section {
   right: 0;
   bottom: 0;
   z-index: 990;
-  padding: 0 20px;
+  padding: 0 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

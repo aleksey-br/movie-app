@@ -12,14 +12,14 @@ function renderCardSlider() {
     <h4 class="card__title movie-card__title">${value.title}</h4>
     <ul class="card__rating movie-card__rating">
       <li class="card__rating-item movie-card__rating-item">
-        <img src="/assets/rating-1.png" alt="rating" />
+        <img src="./assets/rating-1.png" alt="rating" />
         <span
           class="card__rating-text movie-card__rating-text"
           >${value.rating[0].imdb}</span
         >
       </li>
       <li class="card__rating-item movie-card__rating-item">
-        <img src="/assets/rating-2.png" alt="rating" />
+        <img src="./assets/rating-2.png" alt="rating" />
         <span
           class="card__rating-text movie-card__rating-text"
           >${value.rating[1].tomato}</span
