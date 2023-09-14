@@ -18,7 +18,9 @@ const themeButton = document.querySelector(".js-theme-button");
 const themeIcon = document.querySelector(".js-theme-icon");
 const inputLang = document.querySelector(".js-lang-group");
 
+// Изменение темы сайта
 themeButton.addEventListener("click", changeTheme);
+// Ввод данных в инпут
 searchInput.addEventListener("input", () => entrySearch());
 searchInput.addEventListener("keyup", (event) => {
   event.preventDefault();
@@ -38,8 +40,8 @@ modalCloseButton.addEventListener("click", () => {
   modal.classList.remove("open");
   modalContent.innerHTML = "";
 });
-// swiper
 
+// swiper
 var swiper = new Swiper(".mySwiper", {
   // width: "250px",
   slidesPerView: 1,
@@ -68,7 +70,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Ввод данных в в инпут и удаление значеия
+/**
+ * Ввод данных в в инпут и удаление значеия
+ */
 function entrySearch() {
   console.log(searchInput.value);
   let isValue = searchInput.value.length ? true : false;
@@ -85,28 +89,38 @@ function entrySearch() {
   }
 }
 
+/**
+ * Изменение цвета темы
+ */
 function changeTheme() {
   isTheme = !isTheme;
   if (isTheme) {
-    themeIcon.setAttribute("href", "/assets/sprite.svg#moon");
+    themeIcon.setAttribute("href", "./assets/sprite.svg#moon");
     document.body.style.setProperty("--bg-white", "#16111a");
     document.body.style.setProperty("--bg-dark", "#fff");
   } else {
-    themeIcon.setAttribute("href", "/assets/sprite.svg#sun");
+    themeIcon.setAttribute("href", "./assets/sprite.svg#sun");
     document.body.style.setProperty("--bg-white", "#fff");
     document.body.style.setProperty("--bg-dark", "#16111a");
   }
 }
 
-// Смена иконки кнопки поиска
+/**
+ * Смена иконки кнопки поиска
+ * @param {boolean} isValue
+ */
 function changeIcon(isValue) {
   if (isValue) {
-    inputIcon.setAttribute("href", "/assets/sprite.svg#close");
+    inputIcon.setAttribute("href", "./assets/sprite.svg#close");
   } else {
-    inputIcon.setAttribute("href", "/assets/sprite.svg#search");
+    inputIcon.setAttribute("href", "./assets/sprite.svg#search");
   }
 }
 window.addEventListener("scroll", () => headerFixed());
+
+/**
+ * фиксирование хедера при прокрутке
+ */
 function headerFixed() {
   if (window.scrollY > 170) {
     header.classList.add("fixed");
@@ -114,12 +128,3 @@ function headerFixed() {
     header.classList.remove("fixed");
   }
 }
-
-// inputLang.addEventListener("change", (event) => {
-//   Array.from(event.currentTarget.children).forEach((label) => {
-//     label.classList.remove("lang-active");
-//   });
-//   isLang = event.target.value;
-
-//   event.target.parentNode.classList.add("lang-active");
-// });
